@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    tools:context="id.duglegir.jagosholat.StatistikFragmentContent.StatistikSemuaFragment">
+
+    <ListView
+        android:layout_marginTop="@dimen/fab_margin"
+        android:id="@+id/listViewStatSemua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></ListView>
+
+
+</FrameLayout>

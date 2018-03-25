@@ -1,0 +1,170 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.duglegir.jagosholat.JadwalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mendatang"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txt_view_sholat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/sholat_shubuh"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/countDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00796B">
+
+                <ImageView
+                    android:id="@+id/img_next_shubuh"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_24px"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/sholat_shubuh" />
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/waktu_shubuh"
+                    android:background="#00695C"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#E600796B">
+
+                <ImageView
+                    android:id="@+id/img_next_dzuhur"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_24px" />
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/sholat_dzuhur"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/waktu_dzuhur"
+                    android:background="#A600695C"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00796B">
+
+                <ImageView
+                    android:id="@+id/img_next_ashar"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_24px"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/sholat_ashar"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/waktu_ashar"
+                    android:background="#00695C"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#E600796B">
+
+                <ImageView
+                    android:id="@+id/img_next_maghrib"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_24px"/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/sholat_maghrib"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/waktu_maghrib"
+                    android:background="#A600695C"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00796B">
+
+                <ImageView
+                    android:id="@+id/img_next_isya"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_24px" />
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/sholat_isya"
+/>
+                <TextView
+                    style="@style/jadwalSholat"
+                    android:text="@string/waktu_isya"
+                    android:background="#00695C"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

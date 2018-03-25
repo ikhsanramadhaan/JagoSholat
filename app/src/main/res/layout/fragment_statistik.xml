@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.duglegir.jagosholat.StatistikFragment"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_inside_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_statHarian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/stat_harian"
+                android:textColor="@android:color/white"
+                android:background="@drawable/submit_border"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"/>
+
+            <Button
+                android:id="@+id/btn_statGrafik"
+                android:layout_width="0dp"
+                android:background="@drawable/submit_border"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"
+                android:text="@string/grafik"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"/>
+            <Button
+                android:id="@+id/btn_statSemua"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/stat_semua"
+                android:textColor="@android:color/white"
+                android:background="@drawable/submit_border"
+                android:layout_weight="1"
+/>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragStatistik"
+            android:name="id.duglegir.jagosholat.FeatureNiatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
